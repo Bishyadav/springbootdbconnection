@@ -9,8 +9,16 @@ import java.sql.SQLException;
 public class MyService {
     @Autowired
     private Repository repository;
-
-    public String getGreeting() throws SQLException {
-        return repository.getConnectStatus();
+    public String getEmployeeSer() throws SQLException {
+        return repository.getEmployeeRepo();
+    }
+    public void addEmployeeSer() throws SQLException{
+        repository.addEmployeeRepo();
+    }
+    public void updateEmployeeSer() throws SQLException{
+        repository.updateEmployeeRepo();
+    }
+    public void deleteAllEmployee() throws SQLException{
+        repository.deleteAllEmployeeRepo();
     }
 }

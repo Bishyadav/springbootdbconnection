@@ -1,7 +1,6 @@
 package com.example.springbootdbconnection;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
 
@@ -11,8 +10,20 @@ public class MyController {
     @Autowired
     private MyService myService;
 
-    @GetMapping("/hello")
-    public String hello() throws SQLException {
-        return myService.getGreeting();
+    @GetMapping("/getAllEmployee")
+    public String getEmployee() throws SQLException {
+        return myService.getEmployeeSer();
+    }
+    @PostMapping("/addEmployee")
+    public void addEmployeeCon() throws SQLException{
+        myService.addEmployeeSer();
+    }
+    @PutMapping("/updateEmployee")
+    public void updateEmployee() throws SQLException{
+        myService.updateEmployeeSer();
+    }
+    @DeleteMapping("/deleteAllEmployee")
+    public void deleteAllEmployee() throws SQLException{
+        myService.deleteAllEmployee();
     }
 }
