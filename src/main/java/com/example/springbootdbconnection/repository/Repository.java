@@ -1,4 +1,4 @@
-package com.example.springbootdbconnection;
+package com.example.springbootdbconnection.repository;
 
 import com.mysql.cj.x.protobuf.MysqlxCursor;
 import org.springframework.beans.factory.annotation.Value;

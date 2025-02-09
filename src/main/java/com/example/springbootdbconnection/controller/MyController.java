@@ -1,4 +1,5 @@
-package com.example.springbootdbconnection;
+package com.example.springbootdbconnection.controller;
+import com.example.springbootdbconnection.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
