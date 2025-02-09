@@ -1,5 +1,6 @@
-package com.example.springbootdbconnection;
+package com.example.springbootdbconnection.service;
 
+import com.example.springbootdbconnection.repository.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
