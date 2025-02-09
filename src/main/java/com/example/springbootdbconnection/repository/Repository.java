@@ -31,8 +31,7 @@ public class Repository {
 
                     names.append(ids).append("  ").append(name).append("  ").append(salary).append("\n"); // Append names to a StringBuilder
                 }
-               // boolean res=statement.execute(resultSet.toString());
-                //ResultSet rs=statement.getResultSet();
+
                return String.valueOf(names);
             } else {
                 System.out.println("Failed to connect to the database.");
