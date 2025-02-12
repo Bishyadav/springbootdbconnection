@@ -15,12 +15,15 @@ public class MyService {
     public List<Employeedto> getEmployeeSer() throws SQLException {
         return repository.getEmployeeRepo();
     }
+    //============================================================================================================
     public void addEmployeeSer(List<Employeedto> employeedto) throws SQLException{
         repository.addEmployeeRepo(employeedto);
     }
+    //==============================================================================================================
     public void updateEmployeeSer() throws SQLException{
         repository.updateEmployeeRepo();
     }
+    //=================================================================================================================
     public void deleteAllEmployee() throws SQLException{
         repository.deleteAllEmployeeRepo();
     }
