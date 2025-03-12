@@ -15,15 +15,23 @@ public class StudentSer {
     public List<Studentdto> getService() throws SQLException{
         return studentRepo.getRepository();
     }
+    //=========================================================
+    public Studentdto getByIdService(int s_id) throws SQLException {
+        return studentRepo.getByIdRepository(s_id);
+    }
     //===========================================================================================================
-    public void addStudentSer(List<Studentdto> studentdto) throws SQLException{
+    public void addStudentSer(Studentdto studentdto) throws SQLException{
         studentRepo.addStudentRepo(studentdto);
     }
     //===========================================================================================================
-    public void updateStudenteSer() throws  SQLException{
-        studentRepo.updateStudentRepo();
+    public void updateStudenteSer(Studentdto studentdto) throws  SQLException{
+        studentRepo.updateStudentRepo(studentdto);
     }
     //==========================================================================================================
+        public void deleteByIdSer(int s_id) throws SQLException{
+        studentRepo.deleteByIdRepo(s_id);
+        }
+        //================================================================================
         public void deleteStudentSer() throws SQLException{
         studentRepo.deleteStudentRepo();
         }

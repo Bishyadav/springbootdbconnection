@@ -14,6 +14,7 @@ public class Studentdto {
     }
 
     public int getId() {
+
         return s_id;
     }
 
@@ -23,29 +24,33 @@ public class Studentdto {
     }
 
     public String getName() {
+
         return s_name;
     }
 
     public void setName(String s_name) {
+
         this.s_name = s_name;
     }
     public String getAddress() {
+
         return s_address;
     }
 
     public void setAddress(String s_address) {
+
         this.s_address = s_address;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Studentdto that = (Studentdto) o;
-        return s_id == that.s_id && Objects.equals(s_name, that.s_name) && Objects.equals(s_address, that.s_address);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(s_id, s_name, s_address);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Studentdto that = (Studentdto) o;
+//        return s_id == that.s_id && Objects.equals(s_name, that.s_name) && Objects.equals(s_address, that.s_address);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(s_id, s_name, s_address);
+//    }
 }
